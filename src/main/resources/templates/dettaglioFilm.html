@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dettaglio Film</title>
+</head>
+<body>
+    <h1>Dettaglio Film</h1>
+    <p>Codice: <span th:text="${film.codice}"></span></p>
+    <p>Titolo: <span th:text="${film.nome}"></span></p>
+    <p>Genere: <span th:text="${film.categoria}"></span></p>
+    <p>Anno: <span th:text="${film.annoProduzione}"></span></p>
+    <p>Voto: <span th:text="${film.quantita}"></span></p>
+    <!-- Pulsante per tornare alla home -->
+    <a href="/catalogo">Torna alla Home</a>
+</body>
+</html>

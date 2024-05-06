@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css ">
+    <title>Catalogo Film</title>
+</head>
+<body>
+    <h1>Catalogo Film</h1>
+    <table border="1">
+        <tr>
+            <th>Codice</th>
+            <th>Titolo</th>
+            <th>Genere</th>
+            <th>Anno</th>
+            <th>Voto</th>
+        </tr>
+        <tr th:each="film : ${film}">
+            <td th:text="${film.codice}"></td>
+            <td th:text="${film.titolo}"></td>
+            <td th:text="${film.genere}"></td>
+            <td th:text="${film.anno}"></td>
+            <td th:text="${film.voto}"></td>
+        </tr>
+    </table>
+</body>
+</html>
